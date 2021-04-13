@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
         //switch 요소에 대해서는 isChecked 속성으로 체크된 값을 가져옴
         if (binding.roundUpSwitch.isChecked) {
-            tip = kotlin.math.ceil(tip)
+            tip = kotlin.math.ceil(tip*0.01)*100
             //tip = ceil(tip)
             //그냥 ceil() 함수를 쓸 수 있는데,,, 임포트를 해야하고
             // 지금같은 경우는 kotlin.math.ceil()처럼 써주는게 더 간단하다고..?
