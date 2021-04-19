@@ -20,6 +20,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.calculateButton.setOnClickListener { calculateTip() }
+
+        //If you don't use a lambda parameter in the function body,
+        // you can name it _ to make your code more readable and less cluttered.
+        // This code has the same behavior.
         binding.costOfServiceEditText.setOnKeyListener { view, keyCode, _ ->
             handleKeyEvent(
                 view,
